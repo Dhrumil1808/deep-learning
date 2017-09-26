@@ -1,0 +1,11 @@
+class MyClass(object):
+     def __init__(self):
+         self.anevent = EventHandler(self)
+
+def myfunc(sender):
+    print("event triggered by %s" % sender)
+
+
+myobj = MyClass()
+myobj.anevent += myfunc
+myobj.anevent()

@@ -1,0 +1,7 @@
+class basic:
+    def function(self):
+        print ("this is called from a function")
+        
+        
+obj=basic()
+obj.function()        
